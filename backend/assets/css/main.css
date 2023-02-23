@@ -1,0 +1,61 @@
+@import 'theme.css';
+
+html {
+    height: 100%;
+    font-size: 14px;
+}
+
+body {
+    font-family: var(--mdc-typography-font-family);
+    background-color: var(--mdc-theme-background);
+    color: var(--mdc-theme-text-primary-on-background);
+    line-height: 1.3rem;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: var(--mdc-theme-primary);
+}
+
+a,
+button {
+    outline: 0 !important;
+    cursor: pointer;
+}
+
+body,
+dl,
+ol,
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* a {
+    position: relative;
+}
+
+a::before {
+    content: '';    
+    background-color: var(--mdc-theme-primary);
+    border-radius: 20px;    
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -8px;
+    right: -8px;
+    opacity: 0;
+    transition: opacity 55ms linear;
+    transform: scaleY(1.4);    
+    z-index: var(--mdc-ripple-z-index, -1);
+}
+
+a:focus::before {   
+    opacity: var(--mdc-ripple-press-opacity, 0.1);
+} */

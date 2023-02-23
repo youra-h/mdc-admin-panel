@@ -1,0 +1,6 @@
+{
+    "name": "guffi-backend",
+    "scripts": {
+        "message-locale": "php yii message-locale/extract @backend/config/i18n.php"
+    }
+}

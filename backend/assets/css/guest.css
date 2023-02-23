@@ -1,0 +1,149 @@
+:root {
+    --mdc-layout-grid-gutter-desktop: 0;
+    --mdc-layout-grid-gutter-tablet: 0;
+    --mdc-layout-grid-gutter-phone: 0;
+}
+
+@media (max-width: 839px) {
+    .picture-content {
+        display: none;
+    }
+}
+
+.mdc-layout-grid__inner {
+    grid-template-rows: 100vh;
+}
+
+/* DATA CONTENT*/
+
+.data-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 20%;
+    position: relative;
+}
+
+.data-content .header {
+    display: flex;
+    color: var(--mdc-theme-text-logo);
+    padding-top: 45px;
+    align-items: center;
+}
+
+.data-content .header .material-icons {
+    font-size: 2rem;
+    margin-top: -4px;
+}
+
+.data-content .header .title {
+    margin-left: 5px;
+}
+
+.mdc-form-field__i {
+    margin-bottom: 25px;
+}
+
+.mdc-outer-label {
+    font-weight: 600;
+}
+
+.data-content .footer {    
+    color: var(--mdc-theme-text-secondary-on-background);
+    padding-bottom: 25px;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.data-content .footer .mdc-menu-surface--anchor {
+    margin-bottom: 5px;
+}
+
+.data-content .footer .locale-link {
+    text-transform: uppercase;
+}
+
+#locale-menu .mdc-list-item {    
+    /* font-size: var(--mdc-typography-caption-font-size, 0.75rem); */
+}
+
+
+/* PICTURE CONTENT */
+
+.picture-content {
+    background-color: var(--mdc-theme-background-secondary);
+    padding: 10vh 8vw;
+}
+
+.picture-content .box {
+    height: 100%;
+    width: 100%;
+}
+
+.picture-content .box .box-relative {
+    position: relative;
+    /* background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%); */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture-content .box .box-relative .logo {
+    padding-bottom: 75px;
+    position: relative;
+}
+
+.picture-content .box .box-relative .waves-box {
+    width: 100%;
+}
+
+.picture-content .box .box-relative .waves-box .waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px;
+    /*Fix for safari gap*/
+    min-height: 100px;
+    max-height: 150px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+/* Animation */
+
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+.parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+.parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}

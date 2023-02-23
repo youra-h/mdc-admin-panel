@@ -1,0 +1,8 @@
+:root {
+    --mdc-typography-font-family: Nunito, Roboto, sans-serif;
+    --theme-aside-background: #fafafb;
+
+    --mdc-layout-grid-margin-desktop: 0;
+    --mdc-layout-grid-margin-tablet: 0;
+    --mdc-layout-grid-margin-phone: 0;    
+}
